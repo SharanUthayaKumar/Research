@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Agriculture </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Add this line -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home">
+                    <img src="images/image.jpg" alt="university-joy">
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                &#9776; <!-- Hamburger icon -->
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#ProjectScope">Project Scope</a></li>
+                <li><a href="#milestone">Milestone</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide active">
+                        <img src="images/pexels-pixabay-257794.jpg" alt="Hero Image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="images/pexels-_brunovisual-1157201511-32165694.jpg" alt="Hero Image 2">
+                    </div>
+                    <div class="slide">
+                        <img src="images/pexels-christopher-welsch-leveroni-2150186467-32194580.jpg" alt="Hero Image 3">
+                    </div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">Automated Agriculture System: Accurate Water Management
+                 and Disease Analysis</h1><br>
+                <p class="hero-description">A smart farming solution combining precise water control and AI-driven disease detection to boost crop health and sustainability.</p>
+                
+            </div>
+        </section>
+
+    </header>
+
+
+    <section id="ProjectScope" class="project-scope">
+        <h2>Project Scope</h2>
+    
+        <!-- Literature Survey: Text on Left, Image on Right -->
+        <div class="scope-item">
+            <div class="text-content">
+                <h3>Literature Survey</h3>
+                <p>Smart agriculture has emerged as a transformative approach in modern farming, combining automation, sensor technology, and artificial intelligence to enhance efficiency and crop health. Accurate water management is a critical area, with studies showing that IoT-based irrigation systems can reduce water usage by up to 50% while improving yield consistency (Patel et al., 2019). These systems use real-time soil moisture and weather data to automate irrigation decisions, preventing both over- and under-watering.</p>
+                <p>In parallel, machine learning—especially Convolutional Neural Networks (CNNs)—has shown high accuracy in detecting plant diseases from leaf images. Research by Sladojevic et al. (2016) demonstrated that CNNs could classify plant diseases with over 95% accuracy. Early detection through such systems minimizes crop loss and reduces the need for excessive pesticide application.</p>
+                <p>Recent developments integrate both water management and disease detection into unified platforms, enabling farmers to make data-driven decisions for sustainable agriculture. These technologies not only increase productivity but also support climate-resilient farming practices.</p>
+            </div>
+            <div class="image-content">
+                <figure>
+                    <img src="images/literature-survey.jpeg" alt="Illustration of Literature Survey">
+                    <figcaption>Literature Review</figcaption>
+                </figure>
+            </div>
+        </div>
+    
+        <!-- Research Gap: Image on Left, Text on Right -->
+        <div class="scope-item reverse">
+            <div class="image-content">
+                <figure>
+                    <img src="images/research-gap.jpg" alt="Illustration of Research Gap">
+                    <figcaption>Research Gap</figcaption>
+                </figure>
+            </div>
+            <div class="text-content">
+                <h3>Research Gap</h3>
+                
+                <p>While numerous studies have explored smart irrigation systems and machine learning-based plant disease detection individually, there remains a significant gap in integrating both functionalities into a single, unified platform tailored for real-time agricultural decision-making. Most existing systems either focus solely on optimizing water usage through IoT and sensor-based irrigation, or on disease classification using image-based deep learning models. However, real-world farming demands a holistic solution that can address both resource management and crop health simultaneously.</p>
+                <p>Moreover, many disease detection models are trained on static, ideal datasets and lack the adaptability to work effectively in varying environmental conditions commonly found in the field. Similarly, water management systems often do not consider plant health status when determining irrigation levels, which could lead to inefficient water use during disease outbreaks.</p>
+                <p>There is also limited research on low-cost, scalable solutions that combine CNN-based disease analysis with real-time water monitoring for small to mid-scale farmers, especially in developing regions. Addressing these challenges presents an opportunity to bridge the technological divide by designing a comprehensive, intelligent agriculture system that is both accessible and practical for real-world deployment.</p>
+            </div>
+        </div>
+    
+        <!-- Research Problem & Solution: Text on Left, Image on Right -->
+        <div class="research-section">
+            <div class="text-content">
+                <h3>Research Problem & Solution</h3>
+                <p>Agriculture, especially in developing regions, faces significant challenges due to inefficient water usage, unpredictable climate conditions, and delayed disease detection in crops. Traditional irrigation methods often result in either under-watering or over-watering, which directly impacts crop health and yield. Additionally, farmers struggle to identify diseases early due to lack of technical knowledge, leading to delayed treatment and widespread crop loss. Current systems either lack automation, are too costly, or are not tailored to small or medium-scale farms.</p>
+    
+                <br><h4>🌱 Smart Water Management:</h4>
+                <p>Using sensors to monitor soil moisture levels in real-time and control irrigation systems automatically. The system ensures optimal water delivery based on plant needs and environmental data.</p>
+    
+                <br><h4>🦠 AI-Based Disease Detection:</h4>
+                <p>A Convolutional Neural Network (CNN) model is used to analyze leaf images and identify diseases with high accuracy. This model is deployed in a user-friendly web application that allows farmers to upload photos of affected crops.</p>
+    
+                <br><h4>📊 Web Dashboard for Insights:</h4>
+                <p>A centralized platform displays water usage stats, disease detection history, alerts, and recommendations. Farmers can use this data to make informed decisions on irrigation and crop care.</p>
+    
+                <br><h4>💡 Automated Alerts & Recommendations:</h4>
+                <p>The system provides timely alerts via web or SMS when it detects abnormal moisture levels or potential diseases, along with recommendations for fertilizers or pesticides.</p>
+            </div>
+            <div class="image-content">
+                <figure>
+                    <img src="images/research-problem.png" alt="Research Problem and Solution Overview">
+                    <figcaption>Research Problem & Solution Overview</figcaption>
+                </figure>
+            </div>
+        </div>
+    
+        <!-- Methodology: Image on Left, Text on Right -->
+        <div class="custom-methodology-section">
+    <div class="custom-text-block">
+        <h3>Methodology</h3>
+        <br>
+        <p>This chapter outlines the methodology followed to develop the Automated Agriculture System focusing on Accurate Water Management and Disease Analysis. The system integrates IoT-based environmental sensing with machine learning techniques to optimize water usage and detect crop diseases automatically.</p>
+
+        <br><h4>1. System Design Overview</h4> 
+        <p>The system is designed as a hybrid platform combining:
+
+Sensor networks for real-time environmental and soil data collection.
+
+Machine learning models for crop disease detection via image analysis.
+
+Automated irrigation control based on sensor data and predictive analytics.
+
+This integration aims to improve crop health, reduce water wastage, and enhance productivity.</p>
+
+        <br><h4>2. Data Collection</h4>
+        <p>a. Environmental and Soil Data
+Sensors such as soil moisture sensors, temperature and humidity sensors, and light sensors were deployed in the agricultural field.
+
+Sensor data was collected continuously to monitor soil moisture levels, ambient temperature, humidity, and sunlight intensity.
+
+Data was transmitted wirelessly to a central controller for analysis.
+<br>
+b. Crop Disease Image Data
+Images of crops, particularly leaves, were captured using cameras mounted in the field or taken manually.
+
+Publicly available datasets (e.g., PlantVillage) were used to supplement disease image data.
+
+Disease classes included common issues such as fungal infections, bacterial spots, and nutrient deficiencies.</p>
+
+        <br><h4>3. Data Preprocessing</h4>
+        <p>a. Sensor Data Preprocessing
+Raw sensor readings were cleaned to remove noise and outliers.
+
+Data smoothing and interpolation techniques were applied to handle missing or inconsistent readings.
+
+Normalization of sensor values was done to standardize the input for the irrigation control algorithm.
+<br>
+b. Image Data Preprocessing
+Images were resized to a fixed dimension (e.g., 224x224 pixels) for input into the CNN model.
+
+Data augmentation (rotation, flipping, zoom) was applied to increase dataset diversity.
+
+Image pixel values were normalized between 0 and 1 to facilitate faster model convergence.</p>
+
+
+        <br><h4>4. Disease Detection Model Development</h4>
+        <p>A Convolutional Neural Network (CNN) was designed to classify crop leaf images into healthy or diseased categories.
+
+The CNN architecture consisted of multiple convolutional and pooling layers, followed by fully connected layers.
+
+Transfer learning using pre-trained models like ResNet50 was explored to improve accuracy with limited data.
+
+The model was trained on labeled datasets with categorical cross-entropy loss and Adam optimizer.
+
+Model validation and hyperparameter tuning were performed to optimize performance.</p>
+
+        <br><h4>5. Automated Water Management System</h4>
+        <p>The irrigation control algorithm was developed using sensor data inputs to maintain optimal soil moisture.
+
+Thresholds for soil moisture levels were defined based on crop type and growth stage.
+
+When soil moisture falls below the threshold, the system triggers water pumps or valves to irrigate the field automatically.
+
+The system incorporates weather forecasts to adjust irrigation schedules and avoid overwatering.
+
+Feedback loops using continuous sensor data ensure precise and adaptive water management.</p>
+    </div>
+</div>
+
+    </section>
+    
+
+        <section id="Technologies" class="technologies-section">
+            <h2>Technologies</h2>
+            <br>
+            <br>
+
+
+            <div class="tech-cards">
+                <div class="tech-card">
+                    <img src="images/react.png" alt="React">
+                    <h4>React</h4>
+                </div>
+                <div class="tech-card">
+                    <img src="images/python.png" alt="Python">
+                    <h4>Python</h4>
+                </div>
+                <div class="tech-card">
+                    <img src="images/openai.png" alt="OpenAI">
+                    <h4>OpenAI</h4>
+                </div>
+                <div class="tech-card">
+                    <img src="images/tensorflow.png" alt="TensorFlow">
+                    <h4>TensorFlow</h4>
+                </div>
+                <!-- <div class="tech-card">
+                    <img src="images/unity.png" alt="Unity">
+                    <h4>Unity</h4>
+                </div> -->
+                <div class="tech-card">
+                    <img src="images/firebase.png" alt="Firebase">
+                    <h4>Firebase</h4>
+                </div>
+                <div class="tech-card">
+                    <img src="images/fastapi.png" alt="FastAPI">
+                    <h4>FastAPI</h4>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+
+
+
+    <section id="milestone" class="design-section">
+
+        <div class="timeline">
+            <h2>Project Scope</h2>
+            <!-- Project Proposal -->
+            <div class="timeline-empty"></div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-component timeline-content">
+                <h3>Project Proposal</h3>
+                <p>5th July</p>
+            </div>
+
+            <!-- Progress Presentation I -->
+            <div class="timeline-component timeline-content">
+                <h3>Progress Presentation I</h3>
+                <p>4th Dec</p>
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty"></div>
+
+            <!-- Status Document I -->
+            <div class="timeline-empty"></div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-component timeline-content">
+                <h3>Status Document I</h3>
+                <p>3th feb</p>
+            </div>
+
+            <!-- Research Paper -->
+            <div class="timeline-component timeline-content">
+                <h3>Research Paper</h3>
+                <p>20th Mar</p>
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty"></div>
+
+            <!-- Final Reports -->
+            <div class="timeline-empty"></div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-component timeline-content">
+                <h3>Final Reports</h3>
+                <p>11 April</p>
+            </div>
+
+            <!-- Progress Presentation II -->
+            <div class="timeline-component timeline-content">
+                <h3>Progress Presentation II</h3>
+                <p>18 Mar</p>
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty"></div>
+
+            <!-- Status Document II -->
+            <div class="timeline-empty"></div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-component timeline-content">
+                <h3>Status Document II</h3>
+                <p>11th September</p>
+            </div>
+
+            <!-- Final Presentation -->
+            <div class="timeline-component timeline-content">
+                <h3>Final Presentation</h3>
+                <p>27th May</p>
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty"></div>
+
+            <!-- Website Assessment -->
+            <div class="timeline-empty"></div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-component timeline-content">
+                <h3>Website Assessment</h3>
+                <p>27th May</p>
+            </div>
+
+            <!-- Research Paper Registration Notification -->
+            <div class="timeline-component timeline-content">
+                <h3>Research Paper Registration Notification</h3>
+                <p>2nd June</p>
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty"></div>
+
+            <!-- Research Logbook -->
+            <div class="timeline-empty"></div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-component timeline-content">
+                <h3>Research Logbook</h3>
+                <p>9th June</p>
+            </div>
+
+            <!-- Final Report -->
+            <div class="timeline-component timeline-content">
+                <h3>Final Report</h3>
+                <p>11 June</p>
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty"></div>
+
+        </div>
+    </section>
+
+
+    <!-- AboutUs Section -->
+    <section id="about" class="team-section">
+        <h2 class="team-title">Meet Our Team</h2>
+
+        <div class="team-container">
+            <!-- Supervisors Section -->
+            <h3 class="team-subtitle">Supervisors</h3>
+           <div class="custom-team-section">
+  <div class="custom-team-cards">
+    <div class="custom-team-card">
+      <img src="images/Screenshot 2025-05-25 130913.png" alt="Supervisor" class="custom-profile-image">
+      <h4>Supervisor</h4>
+      <p> Dr. Bhagya Nathali Silva
+          Department of Information Technology
+          The University of SLIIT
+          Malabe, Sri Lanka
+          nathali.s@sliit.lk
+      </p>
+    </div>
+    <div class="custom-team-card">
+      <img src="images/Screenshot 2025-05-25 131339.png" alt="Co-Supervisor" class="custom-profile-image">
+      <h4>Co-Supervisor</h4>
+      <p>Assistant Lecturer at Department of Computer Science and Software Engineering, Sri Lanka Institute of Information Technology (SLIIT)
+         chamali.p@sliit.lk
+      </p>
+    </div>
+  </div>
+</div>
+
+
+            <!-- Members Section -->
+            <h3 class="team-subtitle">Members</h3>
+            <div class="team-cards">
+                <div class="team-card">
+                    <img src="images/main.png" alt="Member 1" class="profile-image">
+                    <h4>Sharan.U</h4>
+                    <p>Faculty of Computing
+                        The University of SLIIT
+                        Malabe, Sri Lanka
+                        IT21381690@my.sliit.lk</p>
+                </div>
+                <div class="team-card">
+                    <img src="images/WhatsApp Image 2025-05-25 at 13.23.58_cda515e7.jpg" alt="Member 2" class="profile-image">
+                    <h4>Nakulabasgaran Y</h4>
+                    <p>Department of Information Technology
+                        The University of SLIIT
+                        Malabe, Sri Lanka
+                        IT21228230@my.sliit.lk</p>
+                </div>
+                <div class="team-card">
+                    <img src="images/WhatsApp Image 2025-05-25 at 13.23.58_12c404a0.jpg" alt="Member 3" class="profile-image">
+                    <h4>Sankeethan Y</h4>
+                    <p>Department of Information Technology
+                        The University of SLIIT
+                        Malabe, Sri Lanka
+                        IT21228162@my.sliit.lk</p>
+                </div>
+                <div class="team-card">
+                    <img src="images/IMG_E5931 (1).jpg" alt="Member 4" class="profile-image">
+                    <h4>Mayootharan P.</h4>
+                    <p>Department of Information Technology
+                        The University of SLIIT
+                        Malabe, Sri Lanka
+                        it21290206@my.sliit.lk</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="downloads" class="downloads-section">
+        <h2 class="downloads-title">Downloads</h2>
+
+        <div class="downloads-container">
+            <!-- Documents Subheading -->
+            <h3 class="downloads-subtitle">Documents</h3>
+            <ul class="downloads-list">
+                <li>
+                    <span class="document-name">Project proposals</span>
+                    <a href="documents/Project_Proposal.zip" class="download-link" download>
+                        Download
+                    </a>
+                </li>
+                <li>
+                    <span class="document-name">Status Document</span>
+                    <a href="documents/statusdoc.zip"download-link" download>
+                        Download
+                    </a>
+                </li>
+                <li>
+                    <span class="document-name">Final Report</span>
+                    <a href="documents/Final_Reports.pdf" class="download-link" download>
+                        Download
+                    </a>
+                </li>
+                <li>
+                    <span class="document-name">Research Paper</span>
+                    <a href="documents/24-25J-164.pdf" class="download-link" download>
+                        Download
+                    </a>
+                </li>
+                <li>
+                    <span class="document-name">Topic Assessment(TAF Form)</span>
+                    <a href="path/to/TAF_24-25J-164-merged.pdf" class="download-link" download>
+                        Download
+                    </a>
+                </li>
+                <!-- <li>
+                    <span class="document-name">Project proposal Reports</span>
+                    <a href="path/to/TAF_24-25J-164-merged.pdf" class="download-link" download>
+                        Download
+                    </a>
+                </li> -->
+            </ul>
+
+            <!-- Presentation Subheading -->
+            <h3 class="downloads-subtitle">Presentations</h3>
+            <ul class="downloads-list">
+                <li>
+                    <span class="document-name">Proposal presentation </span>
+                    <a href="documents/24-25J-164 Proposal Presentationn.pdf" class="download-link" download>
+                        Download
+                    </a>
+                </li>
+                <li>
+                    <span class="document-name">Progress Presentation 1 </span>
+                    <a href="documents/24-25J-164 Progress Presentation 1.pdf" class="download-link" download>
+                        Download
+                    </a>
+                </li>
+                <li>
+                    <span class="document-name">Progress Presentation 2</span>
+                    <a href="documents/24-25J-164 Progress Presentation 2.pdf" class="download-link" download>
+                        Download
+                    </a>
+                </li>
+                <li>
+                    <span class="document-name">Final Presentation </span>
+                    <a href="path/to/presentation4.pdf" class="download-link" download>
+                        Download
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to reach out!</p>
+
+        <!-- Google Form Embed -->
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSclITQbZUzIIN-C9sUMF_mF9_mo3mb1sfgIDhHDRXNRU2qFFA/viewform?embedded=true"
+            width="640" height="687" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+        <p><br>Alternatively, you can also email us at <a
+                href="mailto:studenthappinessproject@gmail.com">sharanjanu2000@gmail.com</a></p>
+    </section>
+
+
+
+    <!-- Footer -->
+    <!-- <footer>
+        <p>&copy; 2025 Majestic. All Rights Reserved.</p>
+    </footer> -->
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
